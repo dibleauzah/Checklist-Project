@@ -1,3 +1,18 @@
+/*
+=============================================================================================
+Table of contents:
+    1. Global styles
+    2. Checklist
+    3. Clear button
+=============================================================================================
+*/
+
+/*
+=============================================================================================
+1. Global styles
+=============================================================================================
+*/
+
 body {
   width: 100vw;
   display: flex;
@@ -14,12 +29,20 @@ body {
   user-select: none;
 }
 
+/*
+=============================================================================================
+2. Checklist
+=============================================================================================
+*/
+
 .checklist-container {
   margin-top: 50px;
   width: 479px;
   min-height: 884px;
   background: #848499;
 }
+
+/* Parent container for inputs */
 
 form {
   display: flex;
@@ -30,6 +53,8 @@ form > * {
   outline: none;
 }
 
+/* Add Task button */
+
 #button-add {
   width: 98px;
   height: 65px;
@@ -38,6 +63,8 @@ form > * {
   font-size: 20px;
   border: 2px solid rgb(88, 88, 88);
 }
+
+/* User input bar */
 
 .input-item {
   margin: 10px 5px 10px 25px;
@@ -48,6 +75,8 @@ form > * {
   border: 2px solid rgb(88, 88, 88);
 }
 
+/* List items */
+
 .list-items-container {
   display: block;
   margin: 0 auto;
@@ -57,6 +86,16 @@ form > * {
   background: #b6b6c9;
 }
 
+li {
+  cursor: pointer;
+  width: fit-content;
+}
+
+/*
+=============================================================================================
+3. Clear button
+=============================================================================================
+*/
 #button-clear {
   width: 479px;
   height: 74px;
@@ -70,10 +109,3 @@ form > * {
   margin-top: 15px;
   color: #ffffff;
 }
-
-li {
-  cursor: pointer;
-  width: fit-content;
-}
-
-/* Text Box */
