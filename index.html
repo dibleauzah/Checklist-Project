@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head>I
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Checklist</title>
   </head>
   <body>
-    <h1>Checklist</h1>
+    <div class="checklist-container">
+      <form>
+        <input type="text" placeholder="Add Items Here" class="input-item" />
+        <button type="submit" id="button-add"=>
+          Add task
+        </button>
+      </form>
+      <div class="list-items-container">
+        <ol></ol>
+      </div>
+    </div>
+    <div class="button-export">Export</div>
   </body>
   <script src="index.js"></script>
 </html>
