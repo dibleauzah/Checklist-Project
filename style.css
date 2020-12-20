@@ -4,12 +4,20 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  /* Disable text highlighting */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .checklist-container {
   margin-top: 50px;
   width: 479px;
-  height: 884px;
+  min-height: 884px;
   background: #848499;
 }
 
@@ -18,21 +26,26 @@ form {
   align-items: center;
 }
 
+form > * {
+  outline: none;
+}
+
 #button-add {
   width: 98px;
   height: 65px;
   background: #91d9c7;
   font-family: Roboto, "sans-serif";
   font-size: 20px;
+  border: 2px solid rgb(88, 88, 88);
 }
 
 .input-item {
-  margin-top: 10px;
-  margin-left: 25px;
+  margin: 10px 5px 10px 25px;
   font-size: 19px;
   width: 300px;
   height: 59px;
   background: #ffffff;
+  border: 2px solid rgb(88, 88, 88);
 }
 
 .list-items-container {
@@ -40,11 +53,11 @@ form {
   margin: 0 auto;
   margin-top: 15px;
   width: 428px;
-  height: 780px;
+  height: 73vh;
   background: #b6b6c9;
 }
 
-.button-export {
+#button-clear {
   width: 479px;
   height: 74px;
   background: #f86969;
@@ -60,6 +73,7 @@ form {
 
 li {
   cursor: pointer;
+  width: fit-content;
 }
 
 /* Text Box */
