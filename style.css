@@ -1,22 +1,59 @@
+/*
+=============================================================================================
+Table of contents:
+    1. Global styles
+    2. Checklist
+    3. Clear button
+=============================================================================================
+*/
+
+/*
+=============================================================================================
+1. Global styles
+=============================================================================================
+*/
+
 body {
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  /* Disable text highlighting */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
+
+/*
+=============================================================================================
+2. Checklist
+=============================================================================================
+*/
 
 .checklist-container {
   margin-top: 50px;
   width: 479px;
-  height: 884px;
+  min-height: 884px;
   background: #848499;
 }
+
+/* Parent container for inputs */
 
 form {
   display: flex;
   align-items: center;
 }
+
+form > * {
+  outline: none;
+}
+
+/* Add Task button */
 
 #button-add {
   width: 98px;
@@ -24,27 +61,42 @@ form {
   background: #91d9c7;
   font-family: Roboto, "sans-serif";
   font-size: 20px;
+  border: 2px solid rgb(88, 88, 88);
 }
 
+/* User input bar */
+
 .input-item {
-  margin-top: 10px;
-  margin-left: 25px;
+  margin: 10px 5px 10px 25px;
   font-size: 19px;
   width: 300px;
   height: 59px;
   background: #ffffff;
+  border: 2px solid rgb(88, 88, 88);
 }
+
+/* List items */
 
 .list-items-container {
   display: block;
   margin: 0 auto;
   margin-top: 15px;
   width: 428px;
-  height: 780px;
+  height: 73vh;
   background: #b6b6c9;
 }
 
-.button-export {
+li {
+  cursor: pointer;
+  width: fit-content;
+}
+
+/*
+=============================================================================================
+3. Clear button
+=============================================================================================
+*/
+#button-clear {
   width: 479px;
   height: 74px;
   background: #f86969;
@@ -57,9 +109,3 @@ form {
   margin-top: 15px;
   color: #ffffff;
 }
-
-li {
-  cursor: pointer;
-}
-
-/* Text Box */
